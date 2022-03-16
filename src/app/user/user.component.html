@@ -1,0 +1,14 @@
+<p>user works!</p>
+
+<input type="text" (input)="onInputUserName($event)" [value]="inputElement"   >
+<button (click)="onClickUserName()" [disabled]="!isBtnClickable" >Click Me</button>
+<p>KeyBoard :{{inputElement}}</p>
+<p>Name : {{userName}}</p>
+
+<hr>
+<br>
+<input type="text" [(ngModel)]="name"   />
+<button (click)="handleClear()">Clear input field</button>
+ 
+ 
+ 
